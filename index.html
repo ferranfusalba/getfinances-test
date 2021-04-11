@@ -32,8 +32,9 @@
                     <a class="navbar-brand" href="#"><img src="img/logo.png" id="logo"></a>
                 </div>
                 <div>
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right text-center">
                         <button type="button" id="login" data-toggle="modal" data-target="#mimodal1">Log in</button>
+                        <button type="button" id="reg-2" data-toggle="modal" data-target="#mimodal2">Registra-t'hi!</button>
                         <div class="modal fade" id="mimodal1">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -47,6 +48,27 @@
                                             <label for="password">Contrasenya</label> <input type="password" id="password" class="form-control">
 
                                             <input type="submit" value="Entra-hi" id="reg-2">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="mimodal2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title" id="titol-modal">Uneix-t'hi!</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="proceso2.php" method="POST">
+                                            <label for="username">Nom d'usuari</label> <input type="text" id="username" class="form-control"><br>
+                                            <label for="email">Correu electrònic</label> <input type="email" id="email" class="form-control"><br>
+                                            <label for="password">Contrasenya</label> <input type="password" id="password" class="form-control">
+                                            <p id="pwinfo">La contrasenya ha de tenir 8 caràcters o més.</p><br>
+                                            <label for="password">Repeteix la contrasenya</label> <input type="password" id="password" class="form-control">
+
+                                            <input type="submit" value="Crea el compte" id="reg-2">
                                         </form>
                                     </div>
                                 </div>
@@ -125,37 +147,6 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="container">
-                    <!-- <div class="col-4 col-xs-3 col-sm-4 col-md-0 col-lg-0 col-xl-0"></div> -->
-                    <!-- <div class="col-4 col-xs-6 col-sm-4 col-md-12 col-lg-12 col-xl-12"></div> -->
-                    <div class="text-center">
-                        <button type="button" id="reg-2" data-toggle="modal" data-target="#mimodal2">Registra-t'hi!</button>
-                        <div class="modal fade" id="mimodal2">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title" id="titol-modal">Uneix-t'hi!</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="proceso2.php" method="POST">
-                                            <label for="username">Nom d'usuari</label> <input type="text" id="username" class="form-control"><br>
-                                            <label for="email">Correu electrònic</label> <input type="email" id="email" class="form-control"><br>
-                                            <label for="password">Contrasenya</label> <input type="password" id="password" class="form-control">
-                                            <p id="pwinfo">La contrasenya ha de tenir 8 caràcters o més.</p><br>
-                                            <label for="password">Repeteix la contrasenya</label> <input type="password" id="password" class="form-control">
-
-                                            <input type="submit" value="Crea el compte" id="reg-2">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-4 col-xs-3 col-sm-4 col-md-0 col-lg-0 col-xl-0"></div> -->
                 </div>
             </div>
             <div class="row">
